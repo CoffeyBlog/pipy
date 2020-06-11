@@ -1,9 +1,9 @@
-import blueprint as Blueprint
+import flask
 
 from infrastructure.view_modifiers import response
 from services import package_service
 
-blueprint = Blueprint('home', __name__, template_folder='templates')
+blueprint = flask.Blueprint('home', __name__, template_folder='templates')
 
 
 @blueprint.route('/')
