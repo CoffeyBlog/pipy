@@ -1,32 +1,17 @@
-from flask import Flask, render_template
+import flask
 
-from infrastructure.view_modifiers import response
-
-app = Flask(__name__)
+app = flask.Flask(__name__)
 
 
-def get_latest_package():
-    return [
-        {'name': 'flask', 'version': '1.2.3'},
-        {'name': 'sqlalchemy', 'version': '2.2.0'},
-        {'name': 'passlib', 'version': '3.0.0'},
-    ]
+def main():
+    register_blueprints()
+    app.run(debug=True)
 
 
-@app.route('/')
-@response(template_file='home/index.html')
-def index():
-    test_packages = get_latest_package()
-    return{'packages': test_packages}
-    # return render_template('home/index.html', packages=test_packages)
-
-
-@app.route('/about')
-@response(template_file='home/about.html')
-def about():
-    return {}
-
+def register_blueprints():
+    from views import home_view
+    app.register_blueprint(home_view.blueprint)
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    main()

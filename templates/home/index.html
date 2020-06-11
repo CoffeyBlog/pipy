@@ -1,13 +1,13 @@
-{%  extends "shared/_layout.html" %}
+{% extends "shared/_layout.html" %}
 
 {% block title %} Python Package Index {% endblock %}
 
 <!--- Start of Main Content --->
 
-{%  block main_content %}
+{% block main_content %}
 
-<h1>Package Index</h1>
-<h2>Packages</h2>
+    <h1>Package Index</h1>
+    <h2>Packages</h2>
 
     {% for p in packages %}
 
@@ -15,7 +15,7 @@
             <span class="title">
                 {{ p.name }}
             </span>
-             <span class="version">
+            <span class="version">
                 {{ p.version }}
             </span>
         </div>
@@ -23,7 +23,7 @@
     {% endfor %}
 
 
- {% endblock %}
+{% endblock %}
 
 
 

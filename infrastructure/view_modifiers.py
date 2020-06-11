@@ -1,8 +1,7 @@
-from functools import wraps
-
 import flask
 import werkzeug
 import werkzeug.wrappers
+from functools import wraps
 
 
 def response(*, mimetype: str = None, template_file: str = None):
@@ -41,7 +40,6 @@ def response(*, mimetype: str = None, template_file: str = None):
         return view_method
 
     return response_inner
-
 
 #
 # def template(template_file: str = None):
