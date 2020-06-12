@@ -1,18 +1,81 @@
-.title {
-    font-weight: bold;
-}
 
-.main_content {
-    padding: 20px;
-}
-
-nav {
-    background-color: #000000;
-    padding: 10px;
+body {
+    color: #222222;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
     font-size: 20px;
 }
 
+.title {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.main_content {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: #319d9b;
+    padding: 10px;
+    height: 65px;
+}
+
 nav > a {
+    padding: 10px;
+    font-size: 20px;
     color: white;
     margin-right: 10px;
+}
+
+
+
+.hero {
+    background-color: #38b2ac;
+    color: white;
+    font-size: 18px;
+    padding: 50px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 30px;
+    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+}
+
+.hero a {
+    color: white;
+    text-decoration: underline;
+}
+
+.hero-inner {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.hero h1 {
+    margin-bottom: 25px;
+}
+
+.pipy-stats {
+    padding: 10px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+    border-bottom: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
+}
+
+.pipy-stats .stat {
+    display: inline-block;
+    min-width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    color: #319d9b;
 }

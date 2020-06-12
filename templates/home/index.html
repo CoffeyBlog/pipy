@@ -1,26 +1,48 @@
 {% extends "shared/_layout.html" %}
-
-{% block title %} Python Package Index {% endblock %}
-
-<!--- Start of Main Content --->
-
 {% block main_content %}
 
-    <h1>Package Index</h1>
-    <h2>Packages</h2>
 
-    {% for p in packages %}
-
-        <div>
-            <span class="title">
-                {{ p.name }}
-            </span>
-            <span class="version">
-                {{ p.version }}
-            </span>
+    <div class="hero">
+        <div class="hero-inner">
+            <h1>Find, download and publish TailwindCSS components and themes </h1>
+            <input type="text" placeholder=" Search Projects" class="form-control">
+            <p>or <a href="#">browse projects</a> </p>
         </div>
+    </div>
 
-    {% endfor %}
+    <div class="pipy-stats">
+        <div class="stat"> -1 Projects </div>
+        <div class="stat"> -1 Releases </div>
+        <div class="stat"> -1 Users </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+
+                <h2>New Releases</h2>
+                <div><p>Hot off the presses: Newest Project Releases</p></div>
+
+            {% for p in packages %}
+
+            <div class="project">
+                <div class="title">
+                    <a href="#">{{ p.version }} {{ p.version }}</a></div>
+                <div class="desc">Enter description here</div>
+            </div>
+
+            {% endfor %}
+
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+
+
+
+
 
 
 {% endblock %}
