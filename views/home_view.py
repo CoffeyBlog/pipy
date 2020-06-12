@@ -15,6 +15,7 @@ def index():
     return {'packages': test_packages}
     # return render_template('home/index.html', packages=test_packages)
 
+
 ##################### ABOUT PAGE ##########################
 
 @blueprint.route('/about')

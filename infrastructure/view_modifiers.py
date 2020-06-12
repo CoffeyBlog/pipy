@@ -1,7 +1,8 @@
+from functools import wraps
+
 import flask
 import werkzeug
 import werkzeug.wrappers
-from functools import wraps
 
 
 def response(*, mimetype: str = None, template_file: str = None):

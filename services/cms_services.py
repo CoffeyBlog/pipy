@@ -1,20 +1,21 @@
 fake_db = {
     '/company/history': {
-        'page_title':'Company history',
-        'page_details':'details about company history',
+        'page_title': 'Company history',
+        'page_details': 'details about company history',
     },
     '/company/employees': {
-        'page_title':'Our Team',
-        'page_details':'details about company employees',
+        'page_title': 'Our Team',
+        'page_details': 'details about company employees',
     },
 }
 
-def get_page(url:str) -> dict:
+
+def get_page(url: str) -> dict:
     if not url:
         return {}
 
     url = url.strip().lower
-    url = '/' + url('/')
+    url = '/' + url.lstrip('/')
 
     page = fake_db.get(url, {})
     return page

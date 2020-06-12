@@ -15,8 +15,6 @@ def cms_page(full_url: str):
 
     page = cms_services.get_page(full_url)
     if not page:
-       return flask.abort(404)
+        return flask.abort(404)
 
     return page
-
-
