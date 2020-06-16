@@ -1,6 +1,6 @@
 import flask
 import os
-import pypi.data.db_session as db_session
+import data.db_session as db_session
 
 app = flask.Flask(__name__)
 
@@ -11,7 +11,7 @@ def main():
     app.run(debug=True)
 
 
-def set_db():
+def setup_db():
     db_file = os.path.join(
         os.path.dirname(__file__),
         'db',

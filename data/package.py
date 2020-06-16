@@ -21,7 +21,7 @@ class Package(SqlAlchemyBase):
     # MAINTAINERS
     # RELEASES
 
-    license = sa.Colum(sa.String)
+    license = sa.Column(sa.String)
 
     def __reduce__(self):
         return '<Package {}>'.format(self.id)

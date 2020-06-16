@@ -7,10 +7,10 @@ def global_init(db_file: str):
     global factory
 
     if factory:
-    return
+        return
 
     if not db_file or not db_file.strip():
-        raise Exeption("You must specify a db file")
+        raise Exception("You must specify a db file")
 
 conn_str = 'sqlite:///' + db_file.strip()
 engine = sa.create_engine(conn_str, echo=False)
