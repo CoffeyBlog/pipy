@@ -1,6 +1,10 @@
 import sqlalchemy as sa
 
-class Package:
+from data.modelbase import SqlAlchemyBase
+
+
+class Package(SqlAlchemyBase):
+    __tablename__ = 'packages'
 
     id = sa.Column(sa.String, primary_key=True)
     created_date = sa.Column(sa.DateTime)
@@ -19,5 +23,5 @@ class Package:
 
     license = sa.Colum(sa.String)
 
-
-
+    def __reduce__(self):
+        return '<Package {}>'.format(self.id)
