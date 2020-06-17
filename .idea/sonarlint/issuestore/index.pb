@@ -1,0 +1,23 @@
+
+?
+data/package.py,7/3/739be80faf2cdff2389c2bd9b6a6ad0ad8f6c98e
+G
+templates/cms/page.html,f/c/fc207c42f225ce5702454c375270969da8b131f2
+H
+services/cms_services.py,3/d/3d016413edaa7f3f77b08ff751100b3036a7d777
+K
+services/package_service.py,6/a/6af05d5bad24c4c4456c38df00fe335308af0ef8
+A
+data/modelbase.py,2/a/2a1b792e35ca1d5aa4b0d27138096a9801e3d2e0
+P
+ infrastructure/view_modifiers.py,3/d/3df57891e8204b42926657bb67290a0a49984a86
+I
+templates/home/about.html,2/5/253481aaf1eb273fb6bacc48ccfc0612117348be
+C
+static/css/site.css,d/b/db78ed1f38d833367d15d0b308dcdbc03db424bc
+6
+app.py,1/3/13cce7fd076299c81b4986166f3d822791c9490e
+@
+requirements.txt,1/9/19359a61ae2446b51b549167b014da2fcf265768
+B
+data/db_session.py,b/8/b8d2efe259b42b453b2d2681946bfa01dc1f985d
