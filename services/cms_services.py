@@ -20,3 +20,5 @@ def get_page(url: str) -> dict:
 
     page = fake_db.get(url, {})
     return page
+
+# CMS Code
