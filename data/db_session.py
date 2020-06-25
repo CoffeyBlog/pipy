@@ -24,7 +24,6 @@ def global_init(db_file: str):
 
     #noinspection PyUnresolvedReferences
     import data.__all_models__
-
     SqlAlchemyBase.metadata.create_all(engine)
 
 

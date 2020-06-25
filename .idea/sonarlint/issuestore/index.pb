@@ -23,3 +23,7 @@ B
 data/db_session.py,b/8/b8d2efe259b42b453b2d2681946bfa01dc1f985d
 F
 data/__all_models__.py,6/7/67d6822d9a60c1052f4236acfde79414100c22c9
+O
+templates/packages/details.html,0/8/08a21e00a0b81b15694b2af036a2b283cf1126ae
+M
+templates/shared/_layout.html,a/a/aa8416d81a2e7ab8c3856310c9cfc6c72d01ce28
