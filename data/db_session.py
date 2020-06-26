@@ -5,6 +5,7 @@ from data.modelbase import SqlAlchemyBase
 
 factory = None
 
+
 def global_init(db_file: str):
     global factory
 
@@ -19,11 +20,8 @@ def global_init(db_file: str):
 
     engine = sa.create_engine(conn_str, echo=False)
 
-    factory = orm.sessionmaker(bind = engine)
+    factory = orm.sessionmaker(bind=engine)
 
-
-    #noinspection PyUnresolvedReferences
+    # noinspection PyUnresolvedReferences
     import data.__all_models__
     SqlAlchemyBase.metadata.create_all(engine)
-
-

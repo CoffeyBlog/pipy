@@ -27,3 +27,11 @@ O
 templates/packages/details.html,0/8/08a21e00a0b81b15694b2af036a2b283cf1126ae
 M
 templates/shared/_layout.html,a/a/aa8416d81a2e7ab8c3856310c9cfc6c72d01ce28
+=
+data/users.py,e/4/e452a2a69428626bad6880b4f4fc7ec3dd2f2191
+@
+data/licenses.py,f/1/f1550394d21d9ba5965e0dfd47152b285d3ab4d5
+C
+data/maintainers.py,0/1/01ed5cc92548f70c4935fa5bcab359e3b2416256
+@
+data/releases.py,f/e/fec0f92814070f5890724db2570b0ef58ef6a0b0
